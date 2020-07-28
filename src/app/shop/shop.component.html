@@ -1,0 +1,13 @@
+<div class="container">
+<h2>Items:</h2>
+<mat-card-content>
+<mat-list>
+  <mat-selection-list *ngFor="let item of items"(click)="onSelect(item)"><span class="material-icons">shopping_bag</span>
+    <span class="badge">{{item.name}}</span>
+  </mat-selection-list>
+  </mat-list>
+</mat-card-content>
+</div>
+<div class="container" fxFlex>
+<app-item-detail [item]="selectedItem"></app-item-detail>
+</div>

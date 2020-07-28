@@ -1,0 +1,9 @@
+<mat-card class="container">
+  <mat-card-title>
+    <h1>Inventory</h1>
+  </mat-card-title>
+  <mat-card-subtitle>
+    <p>Ai urmatoarele in inventar: </p>
+    <div *ngFor="let message of messages"><span><h1>{{message.text}}</h1></span></div>
+  </mat-card-subtitle>
+</mat-card>

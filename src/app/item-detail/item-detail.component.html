@@ -1,0 +1,15 @@
+<div class="container" fxLayout fxLayout.xs="column" fxLayoutAlign="center" fxLayoutGap="10px" fxLayoutGap.xs="0" *ngIf="item">
+   <mat-list class="child-2">
+  <mat-card-title><h2>Details: {{item.name | uppercase}}</h2></mat-card-title>
+  <div><span>Id: </span>{{item.id}}</div>
+  <div>
+    <label>Name:<input [(ngModel)]="item.name" placeholder="name"/></label>
+  </div>
+  <div><span>Intelligence: {{item.intelligence}}</span></div>
+  <div><span>Agility: {{item.agility}}</span></div>
+  <div><span>Attackpower: {{item.attackpower}}</span></div>
+  <mat-divider></mat-divider>
+  <a mat-button (click)="sendMessage()" color="warn"><span class="material-icons">add_shopping_cart</span></a>
+  <a mat-button (click)="clearMessage()" color="warn"><span class="material-icons">delete_forever</span></a>
+  </mat-list>
+</div>

@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'aplicatie';
+  title = 'WorldOfAngular';
+  public show:boolean = false;
+  public buttonName:any = 'Inventory';
+
+  ngOnInit () {  }
+
+  toggle() {
+    this.show = !this.show;
+  }
 }
