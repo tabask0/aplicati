@@ -1,20 +1,20 @@
 <div class="container" fxLayout fxLayout.xs="column" fxLayoutAlign="left" fxLayoutGap="100px" fxLayoutGap.xs="5" *ngIf="char">
-    <mat-list class="child-1">
-      <mat-card-title><h2> Details:{{char.name | uppercase}}</h2></mat-card-title>
-    <div matTooltip><span>Id: </span>{{char.id}}</div>
+    <mat-list class="">
+      <mat-card-title><h2> Details: {{char.name | uppercase}}</h2></mat-card-title>
+    <div matTooltip><span><strong>Id:</strong> </span>{{char.id}}</div>
     <div>
-      <label>Name:
+      <label><strong>Name:</strong>
         <input [(ngModel)]="char.name" placeholder="name"/>
       </label>
     </div>
     <div><span>Greet: <button mat-button (click)="openDialog()">Open</button>
     </span></div>
-    <div><span>Rarity: {{char.rarity}}<span class="material-icons">stars</span></span></div>
-    <div><span>Intelligence: {{char.intelligence}}</span></div>
-    <div><span>Agility: {{char.agility}}</span></div>
-    <div><span>Attackpower: {{char.attackpower}}</span></div>
-    <div><span>Averagepower: {{(this.char.intelligence + this.char.agility + this.char.attackpower)/3}}</span></div>
-    <div><span>Equipped Items: {{char.equipped}}</span></div>
+    <div><span><strong>Rarity: </strong>{{char.rarity}}<span class="material-icons">stars</span></span></div>
+    <div><span><strong>Intelligence: </strong>{{char.intelligence}}</span></div>
+    <div><span><strong>Agility: </strong>{{char.agility}}</span></div>
+    <div><span><strong>Attackpower: </strong>{{char.attackpower}}</span></div>
+    <div><span><strong>Averagepower: </strong>{{(this.char.intelligence + this.char.agility + this.char.attackpower)/3}}</span></div>
+    <div><span><strong>Equipped Items: </strong>{{char.equipped}}</span></div>
     <a mat-button (click)="sendMessage()" color="warn"><span class="material-icons">add_shopping_cart</span></a>
     <a mat-button (click)="clearMessage()" color="warn"><span class="material-icons">delete_forever</span></a>
     </mat-list>

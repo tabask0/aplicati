@@ -1,6 +1,7 @@
-<div class="container" fxLayout fxLayoutAlign="left">
+<mat-card class="box">
+<div class="container" fxLayout fxLayoutAlign="center" fxLayoutGap="40px">
   <nav>
-  <mat-card-title fxLayoutAlign="center"><a routerLink="/">{{title}}</a></mat-card-title>
+  <mat-card-title fxLayoutGap="60px" fxLayoutAlign="center">{{title}}</mat-card-title>
   <mat-card-content>
   <a mat-raised-button routerLink="/chars"><span class="material-icons">account_box</span>Chars</a>
   <a mat-raised-button routerLink="/shop"><span class="material-icons">storefront</span>Items</a>
@@ -12,3 +13,4 @@
 </mat-card-content>
 </nav>
 </div>
+</mat-card>
